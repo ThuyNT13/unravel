@@ -1,24 +1,38 @@
-# README
+# UNRAVL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Only 15% of Americans are literate.  We wanted to do something about it.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+UNRAVL is available _here_.
 
-* System dependencies
+## Built With
 
-* Configuration
+* [Rails](http://rubyonrails.org/) - Back-end
+* [Swift](https://swift.org/) - iOS native
+* [JavaScript](https://www.javascript.com/) - Front-end
+* [D3.js](https://d3js.org) - JavaScript library for animating data
+* [interact.js](http://interactjs.io/) - Touch-gesture events
 
-* Database creation
+## Contributing
 
-* Database initialization
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-* How to run the test suite
+## Authors
 
-* Services (job queues, cache servers, search engines, etc.)
+* **[Caitlin Johnson](https://github.com/caitlinlikesrobots)**
 
-* Deployment instructions
+* **[Thuy Ngo](https://github.com/ThuyNT13)**
 
-* ...
+* **[Jillian Somera](https://github.com/jaerodyne)**
+
+* **[Jeff Fichtner](https://github.com/jeff-fichtner/)**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* A huge thank you to [Ariel Malka](https://github.com/arielm) for inspiring us and in his app [He liked thick word soup](http://chronotext.org/Ulysses/index.htm)
+* Other stuff here
