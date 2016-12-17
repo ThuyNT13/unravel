@@ -23,16 +23,16 @@ RSpec.describe User, type: :model do
   end
 
   describe "associations" do
-    it "has stories" do
+    it "has many stories" do
       expect(@user.stories).to match_array([@story])
     end
-    it "has chapters" do
+    it "has many chapters" do
       expect(@user.chapters).to match_array([@chapter])
     end
-    it "has sentences" do
+    it "has many sentences" do
       expect(@user.sentences).to match_array([@sentence])
     end
-    it "has rounds" do
+    it "has many rounds" do
       expect(@user.rounds).to match_array([@round])
     end
   end
