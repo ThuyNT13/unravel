@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  let(:user) {User.new(name: "user", email: "user@email.com", password: "password", phase: 3)}
+  let(:user) {User.new(username: "user", email: "user@email.com", password_digest: "password")}
 
   describe "attributes" do
     it "has a username" do
@@ -11,7 +11,7 @@ RSpec.describe User, type: :model do
       expect(user.email).to eq("user@email.com")
     end
     it "has a password" do
-      expect(user.password).to eq("password")
+      expect(user.password_digest).to eq("password")
     end
   end
 
