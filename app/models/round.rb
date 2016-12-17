@@ -1,7 +1,6 @@
 class Round < ApplicationRecord
   belongs_to :player, class_name: :User
-  belongs_to :sentence
-
-  has_one :chapter, through: :sentence
-  has_one :story, through: :sentence
+  belongs_to :chapter
+  has_many :sentences, through: :chapter
+  has_one :story, through: :chapter
 end
