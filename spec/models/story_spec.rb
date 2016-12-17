@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
+RSpec.describe Story, type: :model do
 
   before(:each) do
     @user = User.create!(username: "user", email: "user@email.com", password_digest: "password")
@@ -11,29 +11,26 @@ RSpec.describe User, type: :model do
   end
 
   describe "attributes" do
-    it "has a username" do
-      expect(@user.username).to eq("user")
+    it "has a reading_level" do
+      expect(@story.reading_level).to eq(3)
     end
-    it "has an email" do
-      expect(@user.email).to eq("user@email.com")
-    end
-    it "has a password" do
-      expect(@user.password_digest).to eq("password")
+    it "has a title" do
+      expect(@story.title).to eq("Georgia on My Mind")
     end
   end
 
   describe "associations" do
-    it "has many stories" do
-      expect(@user.stories).to match_array([@story])
+    it "has many players" do
+      expect(@story.players).to match_array(@user)
     end
     it "has many chapters" do
-      expect(@user.chapters).to match_array([@chapter])
+      expect(@story.chapters).to match_array(@chapter)
     end
     it "has many sentences" do
-      expect(@user.sentences).to match_array([@sentence])
+      expect(@story.sentences).to match_array(@sentence)
     end
     it "has many rounds" do
-      expect(@user.rounds).to match_array([@round])
+      expect(@story.rounds).to match_array(@round)
     end
   end
 
