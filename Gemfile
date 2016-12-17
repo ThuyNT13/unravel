@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
+  gem 'faker', '1.6.6'
   gem 'rspec-rails', '~> 3.5'
   gem 'byebug', platform: :mri
 end
